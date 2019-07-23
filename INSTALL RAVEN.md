@@ -1,6 +1,6 @@
-raven_DET    
+INSTALL RAVEN    
 ==========
-The record of Installing and Studying raven!         
+The record of Installing raven!         
 操作系统：Window10     
 
 需要安装的软件    
