@@ -1,7 +1,7 @@
 INSTALL RAVEN    
 ==========
 The record of Installing raven!         
-操作系统：Window10     
+操作系统：Windows10     
 
 需要安装的软件    
 ------      
