@@ -1,0 +1,938 @@
+(base) [root@VM_0_8_centos raven]# ./raven_framework tests/framework/test_output.xml
+CONDA
+raven_libraries          /root/anaconda3/envs/raven_libraries
+Running RAVEN in "opt" mode.
+PluginFactory: No installed plugins detected.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      .---.        .------######       #####     ###   ###  ########  ###    ###
+     /     \  __  /    --###  ###    ###  ###   ###   ###  ###       #####  ###
+    / /     \(  )/    --###  ###    ###   ###  ###   ###  ######    ### ######
+   //////   ' \/ `   --#######     #########  ###   ###  ###       ###  #####
+  //// / // :    :   -###   ###   ###   ###    ######   ####      ###   ####
+ // /   /  /`    '---###    ###  ###   ###      ###    ########  ###    ###
+//          //..\
+===========UU====UU=============================================================
+           '//||\`
+             ''``
+    
+
+Copyright 2017 Battelle Energy Alliance, LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+  
+RAVEN Python dependencies located and checked.
+(    0.00 sec) SIMULATION               : Message         -> Simulation started at 2020-03-19 20:37:02
+(    0.29 sec) SIMULATION               : Message         -> Global verbosity level is " debug "
+(    0.29 sec) SIMULATION               : DEBUG           -> -- Reading the block: RunInfo        --
+(    0.29 sec) SIMULATION               : DEBUG           -> -- Reading the block: Files          --
+(    0.29 sec) SIMULATION               : DEBUG           -> -- Reading the block: Models         --
+(    0.29 sec) SIMULATION               : DEBUG           -> Reading type ExternalModel with name PythonModule
+(            ) UTILS                    : Message         -> importing module /opt/raven/tests/framework/output_check/output_generator
+(    0.30 sec) ExternalModel            : DEBUG           -> ------Reading Completed for:
+(    0.30 sec) ExternalModel            : DEBUG           ->        Class          : ExternalModel   from <class 'Models.Dummy.Dummy'>
+(    0.30 sec) ExternalModel            : DEBUG           ->        Type           : ExternalModel
+(    0.30 sec) ExternalModel            : DEBUG           ->        Name           : PythonModule
+(    0.30 sec) ExternalModel            : DEBUG           ->        Initialization Parameters:
+(    0.30 sec) ExternalModel            : DEBUG           ->        subType        : 
+(    0.30 sec) ExternalModel            : DEBUG           ->        Current Setting:
+(    0.30 sec) SIMULATION               : DEBUG           -> -- Reading the block: Distributions  --
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           -> ------Reading Completed for:
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Class          : Uniform         from <class 'Distributions.BoostDistribution'>
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Type           : Uniform
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Name           : zeroToOne
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Initialization Parameters:
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        upperBoundUsed : True
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        lowerBoundUsed : True
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        hasInfiniteBound: False
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        upperBound     : 1.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        lowerBound     : 0.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        adjustmentType : 
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        dimensionality : 1
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        messageHandler : <MessageHandler.MessageHandler object at 0x7f9aee16e310>
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        range          : 1.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Current Setting:
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           -> ------Reading Completed for:
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Class          : Uniform         from <class 'Distributions.BoostDistribution'>
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Type           : Uniform
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Name           : oneToTwo
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Initialization Parameters:
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        upperBoundUsed : True
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        lowerBoundUsed : True
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        hasInfiniteBound: False
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        upperBound     : 2.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        lowerBound     : 1.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        adjustmentType : 
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        dimensionality : 1
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        messageHandler : <MessageHandler.MessageHandler object at 0x7f9aee16e310>
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        range          : 1.0
+(    0.30 sec) DISTRIBUTIONS            : DEBUG           ->        Current Setting:
+(    0.30 sec) SIMULATION               : DEBUG           -> -- Reading the block: Samplers       --
+(    0.30 sec) SIMULATION               : DEBUG           -> Reading type Grid with name RAVENGrid
+(    0.32 sec) Grid                     : DEBUG           -> ------Reading Completed for:
+(    0.32 sec) Grid                     : DEBUG           ->        Class          : Grid            from <class 'Samplers.ForwardSampler.ForwardSampler'>
+(    0.32 sec) Grid                     : DEBUG           ->        Type           : Grid
+(    0.32 sec) Grid                     : DEBUG           ->        Name           : RAVENGrid
+(    0.32 sec) Grid                     : DEBUG           ->        Initialization Parameters:
+(    0.32 sec) Grid                     : DEBUG           ->        sampled variable: var1: is sampled using the distribution zeroToOne
+(    0.32 sec) Grid                     : DEBUG           ->        sampled variable: var2: is sampled using the distribution oneToTwo
+(    0.32 sec) Grid                     : DEBUG           ->        limit          : 1
+(    0.32 sec) Grid                     : DEBUG           ->        initial seed   : 1749605806
+(    0.32 sec) Grid                     : DEBUG           ->        var1 is sampled using a grid in : CDF
+(    0.32 sec) Grid                     : DEBUG           ->        var2 is sampled using a grid in : CDF
+(    0.32 sec) Grid                     : DEBUG           ->        Current Setting:
+(    0.32 sec) Grid                     : DEBUG           ->        counter        : 0
+(    0.32 sec) Grid                     : DEBUG           ->        initial seed   : 1749605806
+(    0.32 sec) Grid                     : DEBUG           ->        SampledVarsPb  : {}
+(    0.32 sec) Grid                     : DEBUG           ->        crowDist       : {}
+(    0.32 sec) SIMULATION               : DEBUG           -> -- Reading the block: OutStreams     --
+(    0.32 sec) SIMULATION               : DEBUG           -> Reading type Print with name test
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : test
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: stories
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.32 sec) SIMULATION               : DEBUG           -> Reading type Print with name testprint_selective_hist1
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : testprint_selective_hist1
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: stories
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Variable Name 0 :: Output
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.32 sec) SIMULATION               : DEBUG           -> Reading type Print with name testprint_selective_hist2
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : testprint_selective_hist2
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: stories
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Variable Name 0 :: Input
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.32 sec) SIMULATION               : DEBUG           -> Reading type Print with name testprint_selective_hist3
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : testprint_selective_hist3
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: stories
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Variable Name 0 :: Input|var1
+(    0.32 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.32 sec) SIMULATION               : DEBUG           -> Reading type Print with name testprint_selective_Pointset
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : testprint_selective_Pointset
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: PointSets
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Variable Name 0 :: Output
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Variable Name 1 :: Input|var1
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Print with name fullprint_HistorySet
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : fullprint_HistorySet
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: stories
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Print with name fullprint_Pointset
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Class          : OutStreamPrint  from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Type           : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Name           : fullprint_Pointset
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Specialized Class Type            : OutStreamPrint
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Overwrite output everytime called : True
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Source Name 0 :: PointSets
+(    0.33 sec) OUTSTREAM MANAGER        : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name test
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad9e10> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : test
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot2
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad9b90> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot2
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot3
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad9890> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot3
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot4
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad9650> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot4
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot5
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad9410> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot5
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot6
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad91d0> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot6
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot7
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09e10> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot7
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot8
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09f50> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot8
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot9
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09d50> to debug
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot9
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.33 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot10
+(    0.33 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09a50> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot10
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot11
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b090d0> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot11
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot12
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b095d0> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot12
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot13
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09590> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot13
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot14
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09750> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot14
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot15
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09310> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot15
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot16
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b091d0> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot16
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot17
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5b09b10> to debug
+(    0.34 sec) OUTSTREAM PLOT           : Message         -> For plot namedplot17, type contour3D is not among pre-defined plots! 
+ The OutstreamSystem will try to construct a call on the fly! ExceptedError
+(    0.34 sec) OUTSTREAM PLOT           : Message         -> For plot namedplot17, type filledContour3D is not among pre-defined plots! 
+ The OutstreamSystem will try to construct a call on the fly! ExceptedError
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot17
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot18
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad2d90> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot18
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name plot19
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad2b50> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : plot19
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 3D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name historyPlot2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad2910> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : historyPlot2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type Plot with name 2DHistoryPlot2
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> Set verbosity for <OutStreams.OutStreamPlot.OutStreamPlot object at 0x7f9ad5ad2710> to debug
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> matplotlib version is 3.1.1
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           -> ------Reading Completed for:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Class          : OutStreamPlot   from <class 'OutStreams.OutStreamManager.OutStreamManager'>
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Type           : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Name           : 2DHistoryPlot2
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Initialization Parameters:
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Global Class Type                 : OutStreamManager
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Specialized Class Type            : OutStreamPlot
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Overwrite output everytime called : False
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Plot is        : 2D
+(    0.34 sec) OUTSTREAM PLOT           : DEBUG           ->        Current Setting:
+(    0.34 sec) SIMULATION               : DEBUG           -> -- Reading the block: Steps          --
+(    0.34 sec) SIMULATION               : DEBUG           -> Reading type MultiRun with name FirstMRun
+(    0.34 sec) STEP MULTIRUN            : DEBUG           -> move this tests to base class when it is ready for all the classes
+(    0.34 sec) STEP MULTIRUN            : DEBUG           -> the mapping used in the model for checking the compatibility of usage should be more similar to self.parList to avoid the double mapping below FIXME
+(    0.34 sec) STEP MULTIRUN            : DEBUG           -> reactivate check on Input as soon as loadCsv gets out from the PostProcessor models!
+(    0.35 sec) STEP MULTIRUN            : DEBUG           -> ------Reading Completed for:
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Class          : MultiRun        from <class 'Steps.SingleRun'>
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Type           : MultiRun
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Name           : FirstMRun
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Initialization Parameters:
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Sleep time     : 0.005
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Initial seed   : None
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Input          : Class: DataObjects Type: PointSet  Global name: inputHolder
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Model          : Class: Models Type: ExternalModel  Global name: PythonModule
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Sampler        : Class: Samplers Type: Grid  Global name: RAVENGrid
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Output         : Class: DataObjects Type: PointSet  Global name: PointSets
+(    0.35 sec) STEP MULTIRUN            : DEBUG           ->        Current Setting:
+(    0.35 sec) SIMULATION               : DEBUG           -> Reading type IOStep with name testOutstreamStep
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           -> move this tests to base class when it is ready for all the classes
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           -> ------Reading Completed for:
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Class          : IOStep          from <class 'Steps.Step'>
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Type           : IOStep
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Name           : testOutstreamStep
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Initialization Parameters:
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Sleep time     : 0.005
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Initial seed   : None
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Input          : Class: DataObjects Type: PointSet  Global name: PointSets
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Output         : Class: OutStreams Type: Print  Global name: fullprint_HistorySet
+(    0.35 sec) STEP IOCOMBINED          : DEBUG           ->        Current Setting:
+(    0.35 sec) SIMULATION               : DEBUG           -> -- Reading the block: Databases      --
+(    0.35 sec) DATABASE HDF5            : DEBUG           -> HDF5 Read Mode is "overwrite".
+(    0.35 sec) DATABASE HDF5            : Message         -> Database is located at: /opt/raven/tests/framework/output_check/DatabaseStorage/testOutputDatabase.h5
+(    0.35 sec) DATABASE HDF5            : DEBUG           -> ------Reading Completed for:
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        Class          : HDF5            from <class 'Databases.DateBase'>
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        Type           : HDF5
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        Name           : testOutputDatabase
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        Initialization Parameters:
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        exist          : False
+(    0.35 sec) DATABASE HDF5            : DEBUG           ->        Current Setting:
+(    0.35 sec) SIMULATION               : DEBUG           -> -- Reading the block: DataObjects    --
+(    0.35 sec) SIMULATION               : DEBUG           -> Reading type PointSet with name inputHolder
+InputData: Using param spec "DataSet" to read XML node "PointSet.
+(    0.35 sec) SIMULATION               : DEBUG           -> Reading type PointSet with name PointSets
+InputData: Using param spec "DataSet" to read XML node "PointSet.
+(    0.36 sec) SIMULATION               : DEBUG           -> Reading type HistorySet with name stories
+InputData: Using param spec "DataSet" to read XML node "HistorySet.
+(    0.36 sec) SIMULATION               : DEBUG           -> Moving to working directory: /opt/raven/tests/framework/output_check
+(    0.36 sec) Job Handler              : DEBUG           -> Setting maxQueueSize to 1
+(    0.36 sec) SIMULATION               : DEBUG           -> entering the run
+(    0.36 sec) SIMULATION               : Message         -> -- Beginning step FirstMRun of type: MultiRun                       --
+(    0.36 sec) STEP MULTIRUN            : Message         -> ***  Beginning initialization ***
+(    0.36 sec) STEP MULTIRUN            : DEBUG           -> jobHandler initialized
+(    0.36 sec) STEP MULTIRUN            : DEBUG           -> for the role Model  the item of class ExternalModel   and name PythonModule    has been initialized
+(    0.36 sec) STEP MULTIRUN            : DEBUG           -> for the role Output the item of class HDF5            and name testOutputDatabase has been initialized
+(    0.36 sec) STEP MULTIRUN            : DEBUG           -> for the role Output the item of class HistorySet      and name stories         has been initialized
+(    0.36 sec) STEP MULTIRUN            : DEBUG           -> for the role Output the item of class PointSet        and name PointSets       has been initialized
+(    0.37 sec) Grid                     : Message         -> No restart for Grid
+(    0.37 sec) GRID ENTITY              : Message         -> Starting initialization of grid 
+(    0.37 sec) GRID ENTITY              : Message         -> Grid initialized...
+(    0.37 sec) STEP MULTIRUN            : DEBUG           -> for the role of sampler the item of class Grid and name RAVENGrid has been initialized
+(    0.37 sec) STEP MULTIRUN            : DEBUG           -> Sampler initialization dictionary: {'externalSeeding': None}
+(    0.37 sec) STEP MULTIRUN            : DEBUG           -> Generating input batch of size 1
+(    0.37 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.15}
+(    0.37 sec) STEP MULTIRUN            : DEBUG           -> Submitted input 1
+(    0.37 sec) STEP MULTIRUN            : Message         -> ***    Initialization done    ***
+(    0.37 sec) STEP MULTIRUN            : Message         -> ***       Beginning run       ***
+(    0.38 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      1
+(    0.38 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      1
+(    0.38 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      1
+(    0.38 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.38 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.25714285714286}
+(    0.39 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      2
+(    0.39 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      2
+(    0.39 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      2
+(    0.39 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.39 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.36428571428572}
+(    0.40 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      3
+(    0.40 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      3
+(    0.40 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      3
+(    0.40 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.40 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.47142857142858}
+(    0.42 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      4
+(    0.42 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      4
+(    0.42 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      4
+(    0.42 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.42 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.57857142857144}
+(    0.43 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      5
+(    0.43 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      5
+(    0.43 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      5
+(    0.43 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.43 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.6857142857143002}
+(    0.44 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      6
+(    0.44 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      6
+(    0.44 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      6
+(    0.44 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.44 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.79285714285716}
+(    0.45 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      7
+(    0.45 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      7
+(    0.45 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      7
+(    0.45 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.45 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.15, 'var2': 1.9}
+(    0.46 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      8
+(    0.46 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      8
+(    0.46 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      8
+(    0.46 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.46 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.15}
+(    0.47 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input      9
+(    0.48 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input      9
+(    0.48 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input      9
+(    0.48 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.48 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.25714285714286}
+(    0.49 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     10
+(    0.49 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     10
+(    0.49 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     10
+(    0.49 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.49 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.36428571428572}
+(    0.50 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     11
+(    0.50 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     11
+(    0.50 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     11
+(    0.50 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.50 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.47142857142858}
+(    0.51 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     12
+(    0.51 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     12
+(    0.51 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     12
+(    0.51 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.51 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.57857142857144}
+(    0.52 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     13
+(    0.52 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     13
+(    0.52 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     13
+(    0.52 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.52 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.6857142857143002}
+(    0.53 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     14
+(    0.53 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     14
+(    0.54 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     14
+(    0.54 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.54 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.79285714285716}
+(    0.55 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     15
+(    0.55 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     15
+(    0.55 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     15
+(    0.55 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.55 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.25714285714286, 'var2': 1.9}
+(    0.56 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     16
+(    0.56 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     16
+(    0.56 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     16
+(    0.56 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.56 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.15}
+(    0.57 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     17
+(    0.57 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     17
+(    0.57 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     17
+(    0.57 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.57 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.25714285714286}
+(    0.58 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     18
+(    0.58 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     18
+(    0.58 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     18
+(    0.58 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.58 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.36428571428572}
+(    0.59 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     19
+(    0.59 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     19
+(    0.59 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     19
+(    0.59 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.59 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.47142857142858}
+(    0.61 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     20
+(    0.61 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     20
+(    0.61 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     20
+(    0.61 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.61 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.57857142857144}
+(    0.62 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     21
+(    0.62 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     21
+(    0.62 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     21
+(    0.62 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.62 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.6857142857143002}
+(    0.63 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     22
+(    0.63 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     22
+(    0.63 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     22
+(    0.63 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.63 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.79285714285716}
+(    0.64 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     23
+(    0.64 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     23
+(    0.64 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     23
+(    0.64 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.64 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.36428571428572, 'var2': 1.9}
+(    0.65 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     24
+(    0.65 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     24
+(    0.65 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     24
+(    0.65 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.65 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.15}
+(    0.66 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     25
+(    0.67 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     25
+(    0.67 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     25
+(    0.67 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.67 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.25714285714286}
+(    0.68 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     26
+(    0.68 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     26
+(    0.68 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     26
+(    0.68 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.68 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.36428571428572}
+(    0.69 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     27
+(    0.69 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     27
+(    0.69 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     27
+(    0.69 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.69 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.47142857142858}
+(    0.70 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     28
+(    0.70 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     28
+(    0.70 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     28
+(    0.70 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.70 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.57857142857144}
+(    0.71 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     29
+(    0.71 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     29
+(    0.71 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     29
+(    0.71 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.71 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.6857142857143002}
+(    0.72 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     30
+(    0.72 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     30
+(    0.73 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     30
+(    0.73 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.73 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.79285714285716}
+(    0.74 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     31
+(    0.74 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     31
+(    0.74 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     31
+(    0.74 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.74 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.4714285714285801, 'var2': 1.9}
+(    0.75 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     32
+(    0.75 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     32
+(    0.75 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     32
+(    0.75 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.75 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.15}
+(    0.76 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     33
+(    0.76 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     33
+(    0.76 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     33
+(    0.76 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.76 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.25714285714286}
+(    0.77 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     34
+(    0.77 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     34
+(    0.77 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     34
+(    0.77 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.78 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.36428571428572}
+(    0.79 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     35
+(    0.79 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     35
+(    0.79 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     35
+(    0.79 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.79 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.47142857142858}
+(    0.80 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     36
+(    0.80 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     36
+(    0.80 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     36
+(    0.80 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.80 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.57857142857144}
+(    0.81 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     37
+(    0.81 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     37
+(    0.81 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     37
+(    0.81 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.81 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.6857142857143002}
+(    0.83 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     38
+(    0.83 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     38
+(    0.83 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     38
+(    0.83 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.83 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.79285714285716}
+(    0.84 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     39
+(    0.84 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     39
+(    0.84 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     39
+(    0.84 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.84 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.5785714285714401, 'var2': 1.9}
+(    0.85 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     40
+(    0.85 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     40
+(    0.85 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     40
+(    0.85 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.85 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.15}
+(    0.86 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     41
+(    0.86 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     41
+(    0.86 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     41
+(    0.86 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.86 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.25714285714286}
+(    0.87 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     42
+(    0.88 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     42
+(    0.88 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     42
+(    0.88 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.88 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.36428571428572}
+(    0.89 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     43
+(    0.89 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     43
+(    0.89 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     43
+(    0.89 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.89 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.47142857142858}
+(    0.90 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     44
+(    0.90 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     44
+(    0.90 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     44
+(    0.90 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.90 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.57857142857144}
+(    0.91 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     45
+(    0.91 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     45
+(    0.91 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     45
+(    0.91 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.91 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.6857142857143002}
+(    0.92 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     46
+(    0.92 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     46
+(    0.92 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     46
+(    0.92 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.92 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.79285714285716}
+(    0.94 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     47
+(    0.94 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     47
+(    0.94 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     47
+(    0.94 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.94 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.6857142857143, 'var2': 1.9}
+(    0.95 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     48
+(    0.95 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     48
+(    0.95 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     48
+(    0.95 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.95 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.15}
+(    0.96 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     49
+(    0.96 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     49
+(    0.96 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     49
+(    0.96 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.96 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.25714285714286}
+(    0.97 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     50
+(    0.97 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     50
+(    0.97 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     50
+(    0.97 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.97 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.36428571428572}
+(    0.98 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     51
+(    0.99 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     51
+(    0.99 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     51
+(    0.99 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    0.99 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.47142857142858}
+(    1.00 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     52
+(    1.00 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     52
+(    1.00 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     52
+(    1.00 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.00 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.57857142857144}
+(    1.01 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     53
+(    1.01 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     53
+(    1.01 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     53
+(    1.01 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.01 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.6857142857143002}
+(    1.02 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     54
+(    1.02 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     54
+(    1.02 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     54
+(    1.02 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.02 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.79285714285716}
+(    1.03 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     55
+(    1.03 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     55
+(    1.03 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     55
+(    1.03 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.03 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.7928571428571601, 'var2': 1.9}
+(    1.05 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     56
+(    1.05 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     56
+(    1.05 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     56
+(    1.05 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.05 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.15}
+(    1.06 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     57
+(    1.06 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     57
+(    1.06 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     57
+(    1.06 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.06 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.25714285714286}
+(    1.07 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     58
+(    1.07 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     58
+(    1.07 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     58
+(    1.07 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.07 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.36428571428572}
+(    1.08 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     59
+(    1.08 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     59
+(    1.08 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     59
+(    1.08 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.08 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.47142857142858}
+(    1.09 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     60
+(    1.09 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     60
+(    1.09 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     60
+(    1.09 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.09 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.57857142857144}
+(    1.10 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     61
+(    1.10 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     61
+(    1.11 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     61
+(    1.11 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.11 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.6857142857143002}
+(    1.12 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     62
+(    1.12 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     62
+(    1.12 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     62
+(    1.12 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.12 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.79285714285716}
+(    1.13 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     63
+(    1.13 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     63
+(    1.13 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     63
+(    1.13 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.13 sec) Grid                     : DEBUG           -> Found new point to sample: {'var1': 0.9, 'var2': 1.9}
+(    1.14 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  1 of the input     64
+(    1.14 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  2 of the input     64
+(    1.14 sec) STEP MULTIRUN            : DEBUG           -> Just collected output  3 of the input     64
+(    1.14 sec) STEP MULTIRUN            : DEBUG           -> Testing if the sampler is ready to generate a new input
+(    1.14 sec) STEP MULTIRUN            : DEBUG           -> Finished with 64 runs submitted, 0 jobs running, and 0 completed jobs waiting to be processed.
+(    1.14 sec) Grid                     : DEBUG           -> ===============
+(    1.14 sec) Grid                     : DEBUG           -> | RUN SUMMARY |
+(    1.14 sec) Grid                     : DEBUG           -> ===============
+(    1.14 sec) Grid                     : DEBUG           -> All runs completed without returning errors.
+(    1.14 sec) Grid                     : DEBUG           -> ===============
+(    1.14 sec) Grid                     : DEBUG           ->   END SUMMARY  
+(    1.14 sec) Grid                     : DEBUG           -> ===============
+(    1.14 sec) STEP MULTIRUN            : Message         -> ***       Run finished        ***
+(    1.14 sec) STEP MULTIRUN            : Message         -> ***     Closing the step      ***
+(    1.14 sec) STEP MULTIRUN            : Message         -> ***        Step closed        ***
+(    1.14 sec) SIMULATION               : Message         -> -- End step FirstMRun of type: MultiRun                        --
+
+(    1.14 sec) SIMULATION               : Message         -> -- Beginning step testOutstreamStep of type: IOStep                 --
+(    1.14 sec) STEP IOCOMBINED          : Message         -> ***  Beginning initialization ***
+(    1.14 sec) STEP IOCOMBINED          : DEBUG           -> jobHandler initialized
+(    1.18 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name historyPlot2D   has been initialized
+(    1.18 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name test            has been initialized
+(    1.18 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name fullprint_Pointset has been initialized
+(    1.19 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name 2DHistoryPlot2  has been initialized
+(    1.21 sec) OUTSTREAM PLOT           : Warning         -> 2D plots have not a camera attribute... They are 2D!!!!
+(    1.21 sec) OUTSTREAM PLOT           : Warning         -> Try to perform not-predifined action arrow. If it does not work check manual and/or relavite matplotlib method specification.
+(    1.21 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name test            has been initialized
+(    1.23 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot2           has been initialized
+(    1.25 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot3           has been initialized
+(    1.26 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot4           has been initialized
+(    1.28 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot5           has been initialized
+(    1.29 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot6           has been initialized
+(    1.30 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot7           has been initialized
+(    1.32 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot8           has been initialized
+(    1.33 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot9           has been initialized
+(    1.35 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot10          has been initialized
+(    1.36 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot11          has been initialized
+(    1.37 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot12          has been initialized
+(    1.39 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot13          has been initialized
+(    1.41 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot14          has been initialized
+(    1.42 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot15          has been initialized
+(    1.43 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot16          has been initialized
+(    1.45 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot17          has been initialized
+(    1.46 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot18          has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPlot   and name plot19          has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name testprint_selective_hist1 has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name testprint_selective_hist2 has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name testprint_selective_hist3 has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name testprint_selective_Pointset has been initialized
+(    1.48 sec) STEP IOCOMBINED          : DEBUG           -> for the role Output the item of class OutStreamPrint  and name fullprint_HistorySet has been initialized
+(    1.48 sec) STEP IOCOMBINED          : Message         -> ***    Initialization done    ***
+(    1.48 sec) STEP IOCOMBINED          : Message         -> ***       Beginning run       ***
+(    1.53 sec) OUTSTREAM PLOT           : DEBUG           -> creating plothistoryPlot2D
+(    2.28 sec) OUTSTREAM PLOT           : DEBUG           -> creating plot2DHistoryPlot2
+(    3.00 sec) OUTSTREAM PLOT           : DEBUG           -> creating plottest
+(    3.29 sec) OUTSTREAM PLOT           : DEBUG           -> creating plottest
+(    3.40 sec) OUTSTREAM PLOT           : Warning         -> 2D plots have not a camera attribute... They are 2D!!!!
+(    3.40 sec) OUTSTREAM PLOT           : Warning         -> Try to perform not-predifined action arrow. If it does not work check manual and/or relavite matplotlib method specification.
+(    4.74 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot2
+(    5.10 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot2
+(    6.65 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot3
+(    6.79 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot3
+(    8.54 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot4
+(    8.68 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot4
+(    9.79 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot5
+(    9.93 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot6
+(   10.10 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot7
+(   10.23 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot8
+(   10.53 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot9
+(   10.66 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot10
+(   11.00 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot11
+(   11.11 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot12
+(   11.33 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot13
+(   11.47 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot13
+(   11.69 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot14
+(   11.71 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot14
+(   11.96 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot15
+(   11.98 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot15
+(   11.98 sec) OUTSTREAM PLOT           : Warning         -> Currently, ax.plot_wireframe() in MatPlotLib version: 3.1.1 does not support a colormap! Wireframe plotted on a surface plot...
+(   12.59 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot16
+(   12.64 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot16
+(   12.82 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot17
+(   12.86 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot17
+(   13.43 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot18
+(   14.71 sec) OUTSTREAM PLOT           : DEBUG           -> creating plotplot19
+(   16.69 sec) STEP IOCOMBINED          : Message         -> ***       Run finished        ***
+(   16.69 sec) STEP IOCOMBINED          : Message         -> ***     Closing the step      ***
+(   16.69 sec) STEP IOCOMBINED          : Message         -> ***        Step closed        ***
+(   16.69 sec) SIMULATION               : Message         -> -- End step testOutstreamStep of type: IOStep                  --
+
+--------------------------------------------------
+There were 8 warnings during the simulation run:
+(2 times) 2D plots have not a camera attribute... They are 2D!!!!
+(1 time) Currently, ax.plot_wireframe() in MatPlotLib version: 3.1.1 does not support a colormap! Wireframe plotted on a surface plot...
+(2 times) No output space variables have been requested for DataObject "stories"! No history files will be printed!
+(1 time) No pivot parameter provided; defaulting to "time".
+(2 times) Try to perform not-predifined action arrow. If it does not work check manual and/or relavite matplotlib method specification.
+--------------------------------------------------
+(   16.69 sec) SIMULATION               : Message         -> Run complete!
