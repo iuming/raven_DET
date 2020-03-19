@@ -34,5 +34,5 @@ Submodule path 'pluginName': checked out '786576deef33a317e654558f39f5f45617c744
 -----------
 打开cmd，cd到目标文件，输入`bash.exe raven_framework inputfile.xml`       
 或者双击raven文件夹中的`raven_framework.bat`,然后输入一个文件名，回车，例如：`tests/framework/test_output.xml`        
-输出的结果和[这个](https://github.com/iuming/raven_DET/test_output)差不多，就成功啦！
+输出的结果和[这个](https://github.com/iuming/raven_DET/blob/master/test_output)差不多，就成功啦！                    
 一般来说，windows10上安装raven框架就是这个流程和步骤！
