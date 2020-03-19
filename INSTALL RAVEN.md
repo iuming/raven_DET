@@ -23,9 +23,9 @@ Submodule path 'pluginName': checked out '786576deef33a317e654558f39f5f45617c744
 ```
 3、安装python库：首先找到conda位置：在cmd中输入`where conda`,记住conda.exe的路径；然后删除后面的两个部分，加上`/etc/profile.d/conda.sh`，就是你的conda的定位位置，例如`/c/Users/TALBPW/AppData/Local/Continuum/miniconda3/etc/profile.d/conda.sh`；最后，打开cmd，定位到目标文件，输入`bash.exe scripts\establish_conda_env.sh --install --conda-defs <yourCondaDefsLocation>`        
 4、编译raven：打开cmd后定位到目标目录，然后输入`bash.exe build_raven`           
-> 如果上一步出现error或者之前安装的不是conda是其他的库，使用下面命令：
-> 5、构建raven:打开cmd后定位到目标目录，然后输入`bash.exe build_raven - skip-conda`        
-> 
+> 如果上一步出现error或者之前安装的不是conda是其他的库，使用下面命令：          
+> 5、构建raven:打开cmd后定位到目标目录，然后输入`bash.exe build_raven - skip-conda`            
+>               
 6、测试安装raven：打开cmd后定位到目标目录，然后输入`bash.exe run_tests - j2`         
 
 这样，raven框架就安装好了！          
